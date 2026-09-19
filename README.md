@@ -83,11 +83,13 @@ The queue is a deterministic 5 ms teaching model, not a GStreamer emulator. The 
 
 Both SDKs start with identical timing assumptions. Lower service time is a user input, never a claimed hardware speedup. See [verification and sources](docs/verification.md) for tested arithmetic, model assumptions, and primary references.
 
+The [benchmark roadmap](docs/benchmark-roadmap.md) records proposed branch scheduling, caps negotiation, and native-evidence work; these are not implemented capabilities.
+
 ## GitHub Pages
 
 The workflow runs typecheck, model tests, and production browser tests while the repository is private. Deployment is intentionally skipped for private repositories and pull requests.
 
-Once public, select **Settings > Pages > Source: GitHub Actions**, then run **Test and deploy Pages** (or push to `main`). The expected address is `https://eoinjordan.github.io/GstreamerSimCity/`. Publication has not been verified from this local build.
+Once public, select **Settings > Pages > Source: GitHub Actions**, then run **Test and deploy Pages** (or push to `main`). The expected address is `https://eoinjordan.github.io/GstreamerSimCity/`. A successful deployment validates delivery of the teaching app, not native SDK execution.
 
 ## Layout
 
